@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="asset/img/favicon.png"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini_Lu</title>
+    <title>善善的短網址</title>
     <style>
       :root {
         --color-primary: #5c7cfa;
@@ -203,7 +203,7 @@
     </style>
   </head>
   <body>
-    <header><h1>Mini_Lu的短網址</h1></header>
+    <header><h1>短網址產生器</h1></header>
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="要縮短的網址..." x-model="url" x-ref="url" />
@@ -214,10 +214,10 @@
           <small>預設是隨機產生短網址</small>
         </div>
       </details>
-      <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
+      <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">產生</button>
     </main>
     <footer>
-     Bear V1.00
+     小善善專用版 V1.00
     </footer>
     <script src="asset/js/alpine.js"></script>
     <script>
