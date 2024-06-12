@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="asset/img/favicon.png"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini_Lu的短網址</title>
+    <title>Mini_Lu</title>
     <style>
       :root {
         --color-primary: #5c7cfa;
@@ -211,7 +211,7 @@
         <summary>進階設置</summary>
         <div>
           <input placeholder="slug" x-model="slug" />
-          <small>S預設隨機產生短ID</small>
+          <small>預設是隨機產生短網址</small>
         </div>
       </details>
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
